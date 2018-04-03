@@ -1,0 +1,13 @@
+﻿@model YAS.Models.Records.AutoServiceRecord
+
+<form asp-controller="AutoService" asp-action="Add" method="post">
+    <p>
+        <label asp-for="Name">Name of service:</label>
+        <input asp-for="Name" />
+    </p>
+    <p>
+        <label asp-for="Description">Your description: </label>
+        <input asp-for="Description" />
+    </p>
+    <button type="submit">Submit</button>
+</form>

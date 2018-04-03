@@ -1,0 +1,9 @@
+﻿@model IEnumerable<PostRecord>
+@foreach (var p in Model)
+{
+    <div>
+        <h3>@p.Title</h3>
+        @p.Description
+        <a href="posts/@p.Id"> Go</a>
+    </div>
+}

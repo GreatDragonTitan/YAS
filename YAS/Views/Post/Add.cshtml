@@ -1,0 +1,13 @@
+﻿@model YAS.Models.Records.PostRecord
+
+<form asp-controller="Post" asp-action="Post" method="post">
+    <p>
+        <label asp-for="Title">Your title:</label>
+        <input asp-for="Title" />
+    </p>
+    <p>
+        <label asp-for="Description">Your description:</label>
+        <input asp-for="Description" />
+    </p>
+    <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,9 @@
+﻿@model IEnumerable<AutoServiceRecord>
+@foreach (var p in Model)
+{
+    <div>
+        <h3>@p.Name</h3>
+        @p.Description
+        <a href="autoservices/@p.Id">Details</a>
+    </div>
+}
